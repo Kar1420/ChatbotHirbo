@@ -1,4 +1,3 @@
-<p>job-requisition works!</p>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -138,6 +137,28 @@
           margin-top: 0;
         }
       }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #79C945;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
     </style>
   </head>
 
@@ -145,119 +166,81 @@
     <div class="header">
       <div class="header-left">
         <a class="active" href="dasboard.html"><</a>
-        <a class="logo">Información de la requisición</a>
+        <a class="logo">Preguntas</a>
       </div>
     </div>
 
     <div class="container">
-      <form action="action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="reqStatus">Nombre de la requisición</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqStatus"
-              name="reqSt"
-              placeholder="ADMINISTRADOR DE BASE DE DATOS"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="reqStatus">Estado de la requisición</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqStatus"
-              name="reqSt"
-              placeholder="Open - Not Posted"
-            />
-          </div>
-        </div>
+      <table>
+        <thead>
+          <tr>
+              <th>No</th>
+              <th>Preguntas</th>
+          </tr>
+          <tbody>
+            <tr>
+                <td>1</td>
+                <td>¿Cuál es tu nivel educativo?</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>¿Cuáles consideras que son tus habilidades más destacadas en general?</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>¿Cómo te sientes trabajando en equipo?</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    ¿Qué nivel de base de datos tienes?</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>¿Qué es una base de datos?</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>¿Qué habilidades son importantes para trabajar con bases de datos?</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>¿Qué nivel de base de datos tienes?</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>¿Qué tipo de clave se utiliza para establecer una relación entre dos tablas en una base de datos relacionales?</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>¿Cuál de las siguientes operaciones se utiliza para combinar datos de dos o más tablas en una consulta SQL?</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>¿Qué nivel de base de datos tienes? </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>¿Qué propiedad de ACID garantiza  que todas las operaciones de una transacción se completen con éxito o que ninguna de ellas se realice?</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>¿Cuál es la función principal de un indíce en una base de datos? </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>¿Qué herramienta de Oracle se utiliza para interactuar con la base de datos a través de comandos SQL? </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>¿Cuál es el comando utilizado para crear una nueva tabla en Oracle? </td>
+            </tr>
+        </tbody>
 
-        <div class="row">
-          <div class="col-25">
-            <label for="reqType">Tipo de requisición</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqType"
-              name="reqTyp"
-              placeholder="Standard"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label for="reqNum">Número de requisición</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="reqNum" name="reqNb" placeholder="15409" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label for="reqManager">Director de recursos humanos</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqManager"
-              name="reqMng"
-              placeholder="AARON IVAN GRANJENO GOMEZ"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label for="reqRecr">Reclutador</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqRecr"
-              name="reqRct"
-              placeholder="KARLA PAOLA GARCIA PE#A "
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label for="reqTypRec">Tipo de reclutamiento</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqTypRec"
-              name="reqTyR"
-              placeholder="Contingent"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label for="reqLocation">Ubicación</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="reqLocation"
-              name="reqLoc"
-              placeholder="Mexico and 1 more"
-            />
-          </div>
-        </div>
-
-      </form>
+      </table>
+    </div>
+    <div>
+      <button>Agregar preguntas</button>
     </div>
   </body>
 </html>

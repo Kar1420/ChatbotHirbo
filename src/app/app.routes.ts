@@ -15,6 +15,8 @@ import { InteraccionesComponent } from './modules/interacciones/interacciones.co
 import { EntrevistasComponent } from './modules/entrevistas/entrevistas.component';
 import { ReclutadoresComponent } from './modules/reclutadores/reclutadores.component';
 import { OrganizacionesComponent } from './modules/organizaciones/organizaciones.component';
+import { PreguntasComponent } from './modules/preguntas/preguntas.component';
+import { DocumentosComponent } from './modules/documentos/documentos.component';
 
 
 export const routes: Routes = [
@@ -41,7 +43,9 @@ export const routes: Routes = [
       { path: 'interacciones', component:InteraccionesComponent},
       { path: 'entrevistas', component:EntrevistasComponent},
       { path: 'reclutadores',component:ReclutadoresComponent},
-      { path: 'organizaciones',component:OrganizacionesComponent}
+      { path: 'organizaciones',component:OrganizacionesComponent},
+      { path: 'preguntas', component:PreguntasComponent},
+      { path: 'documentos', component:DocumentosComponent}
 
     ],
   },

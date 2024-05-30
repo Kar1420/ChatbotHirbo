@@ -114,4 +114,12 @@ export class SidebarComponent {
   navigateViewOrganizaciones(): void {
     this.router.navigate(["./organizaciones"]);
   }
+
+  navigateViewPreguntas(): void {
+    this.router.navigate(["./preguntas"]);
+  }
+
+  navigateViewDocumentos(): void {
+    this.router.navigate(["./documentos"]);
+  }
 }

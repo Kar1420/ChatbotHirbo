@@ -88,6 +88,27 @@
         Entrevistas
       </button>
     </div>
+    <!-- Preguntas -->
+    <div>
+      <button
+      (click)="navigateViewPreguntas()"
+       class="hover-orange transparent-button"
+       [class.active]="isRouteActive('/preguntas')">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Preguntas
+      </button>
+    </div>
+
+    <!-- Botón Documentos -->
+    <div>
+      <button
+        (click)="navigateViewDocumentos()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/documentos')">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Documentos
+      </button>
+    </div>
 <!-- Botón Reclutadores -->
     <div>
       <button

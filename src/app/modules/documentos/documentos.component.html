@@ -5,10 +5,10 @@
     <style>
 
 .button {
-  background-color: #FFC72C;
+  background-color: #79c945;
   border: none;
   color: #11111F;
-  padding: 20px;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -73,7 +73,7 @@ body {
         }
 
         input[type=text], select, textarea {
-          width: 100%;
+          width: 30%;
           padding: 12px;
           border: 1px solid #ccc;
           border-radius: 4px;
@@ -131,6 +131,53 @@ body {
             margin-top: 0;
           }
         }
+
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #45a049; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+
+            .registerbtn {
+                background-color: #79C945;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 10%;
+                opacity: 0.9;
+                }
+
+                .registerbtn:hover {
+                opacity:1;
+                }
+
+                @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+                }
+
+                /* Style the submit button */
+                input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                }
         </style>
 
 </head>
@@ -140,77 +187,47 @@ body {
     <div class="header">
         <div class="header-left">
             <a class="active" href="dasboard.html"><</a>
-            <a class="logo">Información de la campaña</a>
+            <a class="logo">Carga de archivos</a>
           </div>
 
 
       </div>
 
 <div class="container">
-
     <form action="action_page.php">
 
         <div class="row">
             <div class="col-25">
-              <label for="campNom">Nombre de la campaña</label>
+              <label for="numCand">Número de candidato</label>
             </div>
             <div class="col-75">
-              <input type="text" id="campNom" name="campNo" placeholder="Administrador de base de datos">
+              <input
+                type="text"
+                id="reqStatus"
+                name="numCand"
+                placeholder="Número de candidato"/>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="myCV">Sube tu CV:</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="myfile" name="myCV">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="myCV">Sube tu identificación:</label>
           </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="campNum">Número de la Campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campNum" name="campNu" placeholder="41006879">
-        </div>
+          <div class="col-75">
+              <input type="file" id="myfile" name="myCV">
+          </div>
       </div>
 
       <div class="row">
-        <div class="col-25">
-          <label for="campDur">Duracion de la Campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campDur" name="campD" placeholder="1 Mes">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="campDesc">Descripción de la campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campDesc" name="campDes" placeholder="Campaña para el reclutamiento del puesto de administrador de base de datos">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="campPurp">Proposito de la campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campPurp" name="campPur" placeholder="Encontrar el mejor prospecto para el puesto de administrador de base de datos">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="campGoal">Meta de la campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campGoal" name="campG" placeholder="Mejora de procesos">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="campLabel">Etiqueta de la campaña</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="campLabel" name="campLab" placeholder="Base de datos">
-        </div>
+        <input type="submit" value="Cargar" >
       </div>
 
 
