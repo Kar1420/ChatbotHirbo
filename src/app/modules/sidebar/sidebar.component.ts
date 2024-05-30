@@ -82,10 +82,36 @@ export class SidebarComponent {
   navigateViewUsers(): void {
     this.router.navigate(["./listaUsuario"]);
   }
-  navigateAddOrg(): void {
-    this.router.navigate(["./agregar-org"]);
+
+  navigateViewJobRequisition(): void {
+    this.router.navigate(["./jobRequisition"]);
   }
-  navigateAddQR(): void {
-    this.router.navigate(["./lista-qr"]);
+
+  navigateViewCampanas(): void {
+    this.router.navigate(["./campanas"]);
+  }
+
+  navigateViewCandidatos(): void {
+    this.router.navigate(["./candidatos"]);
+  }
+
+  navigateViewIndustrias(): void {
+    this.router.navigate(["./industrias"]);
+  }
+
+  navigateViewInteracciones(): void {
+    this.router.navigate(["./interacciones"]);
+  }
+
+  navigateViewEntrevistas(): void {
+    this.router.navigate(["./entrevistas"]);
+  }
+
+  navigateViewReclutadores(): void {
+    this.router.navigate(["./reclutadores"]);
+  }
+
+  navigateViewOrganizaciones(): void {
+    this.router.navigate(["./organizaciones"]);
   }
 }

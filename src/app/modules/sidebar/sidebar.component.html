@@ -31,29 +31,29 @@
 <!-- Botón Requisitos de trabajo  -->
       <div>
       <button
-        class="hover-orange transparent-button">
+      (click)="navigateViewJobRequisition()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/jobRequisition')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Requisitos de trabajo
       </button>
      </div>
-<!-- Botón organizaciones -->
-     <div>
-      <button class="hover-orange transparent-button">
-        <i class="fas fa-home" style="margin-right: 35px"></i>
-        Organizaciones
-      </button>
-    </div>
+
 <!-- Botó campañas -->
     <div>
       <button
-        class="hover-orange transparent-button">
+      (click)="navigateViewCampanas()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/campanas')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Campañas
       </button>
     </div>
 <!-- Botón candidatos -->
     <div>
-      <button class="hover-orange transparent-button">
+      <button
+      (click)="navigateViewCandidatos()" class="hover-orange transparent-button"
+      [class.active]="isRouteActive('/candidatos')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Candidatos
       </button>
@@ -61,7 +61,9 @@
 <!-- Botón Industrias -->
     <div>
       <button
-        class="hover-orange transparent-button">
+      (click)="navigateViewIndustrias()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/industrias')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Industrias
       </button>
@@ -69,7 +71,9 @@
 <!-- Botón interacciones -->
     <div>
       <button
-        class="hover-orange transparent-button">
+      (click)="navigateViewInteracciones()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/interacciones')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Interaciones
       </button>
@@ -77,7 +81,9 @@
 <!-- Botón entrevistas -->
     <div>
       <button
-        class="hover-orange transparent-button">
+      (click)="navigateViewEntrevistas()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/entrevistas')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Entrevistas
       </button>
@@ -85,7 +91,9 @@
 <!-- Botón Reclutadores -->
     <div>
       <button
-        class="hover-orange transparent-button">
+        (click)="navigateViewReclutadores()"
+        class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/reclutadores')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Reclutadores
       </button>
@@ -93,7 +101,9 @@
 <!-- Botón Organizaciones  -->
     <div>
       <button
-       class="hover-orange transparent-button">
+      (click)="navigateViewOrganizaciones()"
+       class="hover-orange transparent-button"
+       [class.active]="isRouteActive('/organizaciones')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
         Organizaciones
       </button>
