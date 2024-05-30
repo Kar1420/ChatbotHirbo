@@ -20,42 +20,99 @@
   </div>
 
     <mat-nav-list>
-      <button
-        (click)="navigateViewUsers()"
-        class="hover-orange transparent-button"
-        [class.active]="isRouteActive('/listaUsuario')"
-      >
+<!-- Botón usuarios -->
+      <div>
+      <button (click)="navigateViewUsers()" class="hover-orange transparent-button"
+        [class.active]="isRouteActive('/listaUsuario')">
         <i class="fas fa-home" style="margin-right: 35px"></i>
-        Agregar requisitos de trabajo
-        <!-- Mi usuarios -->
+        Usuarios
       </button>
+      </div>
+<!-- Botón Requisitos de trabajo  -->
+      <div>
       <button
-        (click)="navigateAddOrg()"
-        class="hover-orange transparent-button"
-        [class.active]="isRouteActive('/agregar-org')"
-      >
+        class="hover-orange transparent-button">
         <i class="fas fa-home" style="margin-right: 35px"></i>
-        Agregar organización
+        Requisitos de trabajo
       </button>
-      <button
-        (click)="navigateAddQR()"
-        class="hover-orange transparent-button"
-        [class.active]="isRouteActive('/lista-qr')"
-      >
+     </div>
+<!-- Botón organizaciones -->
+     <div>
+      <button class="hover-orange transparent-button">
         <i class="fas fa-home" style="margin-right: 35px"></i>
-        Agregar campañas 
-      </button>
-
-      <div class="container">
-      <button class="bottom-left-text"
-        (click)="logoutBS()"
-        class="hover-orange transparent-button"
-        [class.active]="isRouteActive('/plan')"
-      >
-        <i class="fas fa-sign-out-alt" style="margin-right: 35px"></i>
-        Cerrar sesión
+        Organizaciones
       </button>
     </div>
+<!-- Botó campañas -->
+    <div>
+      <button
+        class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Campañas
+      </button>
+    </div>
+<!-- Botón candidatos -->
+    <div>
+      <button class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Candidatos
+      </button>
+    </div>
+<!-- Botón Industrias -->
+    <div>
+      <button
+        class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Industrias
+      </button>
+    </div>
+<!-- Botón interacciones -->
+    <div>
+      <button
+        class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Interaciones
+      </button>
+    </div>
+<!-- Botón entrevistas -->
+    <div>
+      <button
+        class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Entrevistas
+      </button>
+    </div>
+<!-- Botón Reclutadores -->
+    <div>
+      <button
+        class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Reclutadores
+      </button>
+    </div>
+<!-- Botón Organizaciones  -->
+    <div>
+      <button
+       class="hover-orange transparent-button">
+        <i class="fas fa-home" style="margin-right: 35px"></i>
+        Organizaciones
+      </button>
+    </div>
+<!-- Botón Salir -->
+    <button class="bottom-left-text"
+    (click)="logoutBS()"
+    class="hover-orange transparent-button"
+    [class.active]="isRouteActive('/plan')"
+  >
+    <i class="fas fa-sign-out-alt" style="margin-right: 35px"></i>
+    Cerrar sesión
+  </button>
+
+
+    <div class="container">
+
+    </div>
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
